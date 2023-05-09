@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Clock</title>
+    <script
+      src="https://kit.fontawesome.com/55b7d2f7b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="header">
+      <h1 id="header-text">Pomodoro Clock</h1>
+    </section>
+
+    <div id="container-controls">
+      <div id="break-controls">
+        <h2 id="break-label">Break Length</h2>
+        <div id="element1">
+          <button type="button" id="break-increment">+</button>
+          <span id="break-length"></span>
+          <button type="button" id="break-decrement">-</button>
+        </div>
+      </div>
+
+      <div id="session-controls">
+        <h2 id="session-label">Session Length</h2>
+        <div id="element2">
+          <button type="button" id="session-increment">+</button>
+          <span id="session-length"></span>
+          <button type="button" id="session-decrement">-</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="display">
+      <h2 id="timer-label">Session</h2>
+      <div id="time-left"></div>
+      <div id="btn-div">
+        <button type="button" id="start_stop">
+          <i class="fa-solid fa-forward-step" aria-hidden="true"></i>
+        </button>
+        <button type="button" id="reset">
+          <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+        </button>
+      </div>
+      <audio id="beep" src="./sounds/Beep.mp4" muted></audio>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/55b7d2f7b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
